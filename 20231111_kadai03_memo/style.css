@@ -1,0 +1,166 @@
+body {
+    font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: rgb(17, 17, 17);
+    width: 100%;
+    background-color: #e5eff2; /* ページの背景色を緑色に設定 */
+}
+
+
+
+.top-container {
+position: relative;
+box-sizing: border-box;
+text-align: center;
+height: 90vh;
+min-height: 600px;
+max-height: 900px;
+margin-bottom: 100px;
+}
+
+
+/* ヘッダー */
+header {
+    background-color: #151ce6; /* ヘッダーの背景色を濃い緑色に設定 */
+    color: white; /* ヘッダーテキストを白に設定 */
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; /* ページ中央に配置 */
+}
+
+main {
+    width: 70%;
+    margin: 0 auto; /* ページ中央に配置 */
+}
+
+/* タイトル */
+h1 {
+    color: #333; /* タイトルのテキストカラーを黒に設定 */
+    text-align: center;
+    font-size: 24px;
+}
+
+/* 入力エリア */
+.input-area {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.input-area:hover {
+    transform: translateY(-2px);
+}
+
+.input-area p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.input-area input[type="text"],
+.input-area input[type="number"],
+.input-area textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-area input[type="datetime-local"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* チェックボックススタイル */
+.input-area div {
+    display: flex;
+    align-items: center;
+}
+
+.input-area input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+
+.input-area label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ボタン */
+button {
+    background-color: #151ce6; /* ボタンの背景色を濃い緑色に設定 */
+    color: white; /* ボタンテキストを白に設定 */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #151ce6; /* ホバー時の背景色を変更 */
+}
+
+/* リスト */
+ul {
+    list-style-type: none; /* 箇条書きのマーカーを非表示に */
+    padding: 0;
+}
+
+ul li {
+    background-color: #FFF; /* 各リストアイテムの背景色を白に設定 */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 管理者コード欄と検索欄のスタイル */
+#adminCodeInput,
+#searchName,
+#searchDate {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 検索ボタンのスタイル */
+#searchButton {
+    background-color: #151ce6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #151ce6;
+}
+
+/* 検索結果表示エリアのスタイル */
+#searchResult {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#searchResult:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- やりたいこと -->
+    <!-- 登録名、日時、出発地、目的地、移動手段、人数 -->
+    <!-- 投稿、削除 -->
+    <!-- 管理者 -->
+    <header>受付登録</header>
+    <div class="top-container">
+        <h1>入力ページ</h1>
+        <main>
+            <!-- 入力エリア -->
+            <div class="input-area">
+                <p>申込者</p>
+                 <input id="name" type="text" placeholder="登録者名を入力">
+                <p>出発日時</p>
+                 <input id="timestart" type="datetime-local" >
+                <p>終了日時</p>
+                 <input id="timeend" type="datetime-local" >
+                <p>出発地点</p>
+                 <input id="start" type="text" placeholder="出発地点を入力">
+                <p>終着地点</p>
+                 <input id="goal" type="text" placeholder="目的地を入力">
+                <p>移動手段を選んでください</p>
+                     <!-- 車 -->
+                     <!-- labelにすることでＵＸ改善する、文字を押しても反応するようになる -->
+                     <div>
+                      <input type="checkbox" id="car" name="move" value="car" />
+                      <label for="car" >自動車</label>
+                     </div>
+                     <!-- 電車 -->
+                     <div>
+                    <input type="checkbox" id="train" name="move" value="train" />
+                    <label for="train" >電車</label>
+                     </div>
+                    <!-- 徒歩 -->
+                    <div>
+                    <input type="checkbox" id="walk" name="move" value="walk" />
+                    <label for="walk" >徒歩</label>
+                    </div>
+                <p>参加人数を入力してください。</p>
+                <input id="number" type="number" value="0" />
+                <p>その他ご要望をご記入ください</p>
+                <textarea id="text" placeholder="会議室、モニター、プロジェクターなど"></textarea>
+    
+            </div>
+            <!-- 投稿エリア -->
+            <div class="button-area">
+                <button id="save">送信</button>
+                <button id="clear" style="display: none;">リセット</button>
+    
+            </div>
+    
+            <div>
+            <!-- データ表示用の管理者コード入力フィールドとボタン -->
+            <p>管理者コード</p>
+            <input id="adminCodeInput" type="text" placeholder="管理者コードを入力">
+            <button id="adminView">閲覧</button>
+    
+            </div>
+
+              <!-- 検索エリア -->
+              <div>
+                <p>検索</p>
+                <input id="searchName" type="text" placeholder="登録者名を入力">
+                <input id="searchDate" type="datetime-local">
+                <button id="searchButton">検索</button>
+            </div>
+    
+
+            
+        </main>
+        <ul id="list"> </ul>
+        <div id="searchResult"></div> <!-- 検索結果を表示する場所 -->
+        <button id="analytics">アナリティクス</button>
+        <canvas id="analyticsChart" width="400" height="200"></canvas>
+    </div>
+    
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="memo.js/memo.js"></script>
+    <script src="memo.js/seach.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+
+</body>
+</html>
